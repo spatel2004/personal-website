@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#050A30;
+    background-size:cover;
+    overflow-x: hidden;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+       /* Section 1 CSS */ 
+/* ----------------------------------------------------------------- */
+
+.initials {
+    height: 90px;
+    width: 140px;
+    margin-left:3%;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 100px;
+    padding:0 20px;
+}
+
+nav button {
+    background-color:transparent;
+    font-size:14px;
+    height:30px;
+    width:90px;
+    border:none;
+    color:white;
+}
+
+nav button:hover {
+    transform:scale(1.3);
+    cursor:pointer;
+    animation:nav-animation 5s linear infinite;
+}
+
+.nav-bar-links {
+    height:80px;
+    width:50%;
+    list-style-type:none;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:1%;
+}
+
+
+
+.tools-button, .my-work-button, .experience-button, .email-me {
+    background-color:transparent;
+    font-family:"Lato",sans-serif;
+    font-size:14px;
+    height:30px;
+    width:90px;
+    border:none;
+} 
+
+
+
+@keyframes nav-animation {
+    0%,25%,50%,75%,100% {
+        color:#0CAFFF;
+    }
+}
+
+
+.section-1-container {
+    display:flex;
+    justify-content:space-between;
+    margin-top:4%;
+}
+
+.left-side {
+    margin-left: 5%;
+    height:700px;
+    margin-top:4%;
+    width:fit-content;
+}
+
+@keyframes border-rotate-1 {
+
+    0% {
+        border-color: #00308F;
+    }
+
+    25% {
+        border-color: none;
+    }
+
+    50% {
+        border-color: #00308F;
+    }
+
+    75% {
+        border-color: none;
+    }
+
+    100% {
+        border-color: #00308F;
+    }
+
+}
+
+.profile-pic {
+    height: 650px;
+    width: 500px;
+    transform:rotate(1deg);
+    border-radius:20px;
+    box-shadow:5px 5px 3px 2px black;
+    margin-left:-10%;
+}
+
+@keyframes example {
+    20% {color: gold;}
+    60% {color: #00308F;}
+    100% {color: gold};
+}
+
+.hi {
+    font-family: 'Outfit';
+    color: white;
+    margin-left:3%;
+    margin-top:10px;
+    font-size:20px;
+    width:fit-content;
+}
+
+
+.software-developer-title {
+    color: white;
+    font-size:50px;
+    font-weight:500;
+    font-family:'Outfit';
+    margin-top:40px;
+    width:fit-content;
+    margin-left:2%;
+} 
+
+@keyframes hand {
+    0% {
+        transform:rotate(40deg);
+    }
+    25% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(40deg);
+    }
+    75% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(40deg);
+    }
+}
+
+.hand-emoji {
+    height:45px;
+    width:45px;
+    margin-left:0;
+    animation:hand 10s linear infinite;
+}
+
+.welcome-container {
+    display:flex;
+    align-items:center;
+}
+
+@keyframes name-animation {
+
+    0% {
+        color:#0CAFFF;
+        margin-left:0;
+        text-shadow:gold 1px 1px;
+    }
+
+    25% {
+        color:#0CAFFF;
+        margin-left:4%;
+        text-shadow:gold 1px 1px;
+    }
+
+    50% {
+        color:#0CAFFF;
+        margin-left:8%;
+        text-shadow:gold 1px 1px;
+    }
+
+    75% {
+        color:#0CAFFF;
+        margin-left:4%;
+        text-shadow:gold 1px 1px;
+    }
+
+    100% {
+        color:#0CAFFF;
+        margin-left:0%;
+        text-shadow:gold 1px 1px;
+    }
+}
+
+span.name {
+    display:inline-block;
+    color:white;
+    animation:name-animation 5s linear infinite;
+}
+
+.who-information {
+    width:fit-content;
+    padding-left:0;
+    font-size:15px;
+    font-family:'Outfit';
+    list-style-type:none;
+    color:white;
+    margin-top:5%;
+}
+
+.information {
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    margin-top:25px;
+    gap:20px;
+    width:fit-content;
+}
+
+.individual-information {
+    font-size:18px;
+}
+
+.books-emoji{
+    height:35px;
+    width:30px;
+}
+
+.graduation-hat {
+    height:35px;
+    width:30px;
+
+}
+
+.comp-sci-word, .cybersecurity-word {
+    color:gold;
+}
+
+.university-name {
+    color: gold;
+    font-weight:900;
+}
+
+.robot-icon {
+    height:35px;
+    width:30px;
+}
+
+.coding-icon {
+    height:40px;
+    width:35px;
+}
+
+.machine-learning-word {
+    color:gold;
+}
+
+.favorite-languages {
+    color:gold;
+}
+
+@keyframes jumping-animation {
+    0% {
+        margin-top:6%
+    }
+
+    20% {
+        margin-top:8%;
+    }
+
+    40% {
+        margin-top:6%;
+    }
+
+    60% {
+        margin-top:8%
+    }
+
+
+    80% {
+        margin-top:6%
+    }
+
+    100% {
+        margin-top:8%
+    }
+
+    120% {
+        margin-top:6%;
+    }
+
+
+}
+
+.contact-container {
+    margin-top:8%;
+    display:flex;
+    gap:50px;
+    margin-left:1%;
+    width:fit-content;
+    animation:jumping-animation 7s linear infinite;
+}
+
+.contact-container .social-media {
+    height:50px;
+    width:50px;
+    border-radius:75%;
+}
+
+
+       /* Section 2 CSS */ 
+/* ----------------------------------------------------------------- */
+
+.section-2 {
+    min-height:1000px;
+    padding:20px;
+}
+
+
+.experience {
+    display:flex;
+    justify-content:left;
+    margin-left:5%;
+    margin-top:6%;
+    gap:20px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    background-color:rgba(0,48,143,0.1);
+    width:85%;
+}
+
+.left {
+    width:100%;
+    display:flex;
+    justify-content:left;
+}
+
+.experience-img {
+    border:none;
+    box-shadow:0 0 15px #00308F, 0 0 30px #00308F;
+    transition:all 0.3s ease-in-out;
+    height:150px;
+    width:150px;
+    border-radius:10px;
+}
+
+
+.experience-img:hover {
+    box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
+    transform:scale(1.15);
+}
+
+.experience:hover {
+    box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
+}
+
+.experience-description {
+    margin-left:3%;
+    line-height:1.5;
+
+}
+
+.experience-date, .experience-position, .experience-company, .experience-activities {
+    font-family:outfit;
+}
+
+.experience-date {
+    font-size:18px;
+    color:white;
+}
+
+.experience-position {
+    font-size:27px;
+    color:white;
+    font-weight:bold;
+    color:#0CAFFF;
+    text-shadow:2px 2px 5px black;
+}
+
+.experience-company {
+    font-size:18px;
+    color:white;
+    font-weight:bold;
+    text-shadow:2px 2px 5px black;
+}
+
+.experience-activities {
+    color:white;
+}
+
+
+.right {
+    margin-left:-25%;
+    height:100px;
+    display:flex;
+    justify-content:space-between;
+    margin-top:5px;
+    gap:20px;
+
+}
+
+
+@keyframes border-rotate-2 {
+
+    0%,100% {
+        border-color: gold;
+    }
+
+    50% {
+        border-color:transparent;
+    }
+
+}
+
+.right .skill {
+    border:2px solid gold;
+    border-radius:15px;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#00308F;
+    color:white;
+    animation:border-rotate-2 5s linear infinite;
+}
+
+.right .skill:hover {
+    transform:scale(1.20);
+    box-shadow:0 0 15px #0CAFFF, 0 0 30px #0CAFFF;
+}
+
+
+        /* Section 3 CSS */ 
+/* ----------------------------------------------------------------- */
+.section-3 {
+    margin-top:10%;
+    width:100%;
+}
+
+.projects-title {
+    text-align:center;
+    font-family:'Outfit';
+    font-size:60px;
+    font-weight:bold;
+    color:white;
+    text-shadow:6px 6px #00308F;
+
+}
+
+.past-projects {
+    margin-top:5%;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+}
+
+.individual-project {
+    width:fit-content;
+    padding-bottom:5%;
+    display:inline-block;
+}
+
+.project-picture {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    width:50%;
+    height:250px;
+    width:300px;
+    border-radius:20px;
+    box-shadow:0 0 15px #00308F, 0 0 30px #00308F;
+    transition:all 0.3s ease-in-out;
+}
+
+.project-picture:hover {
+    box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
+    transform:scale(1.05);
+}
+
+.individual-project-description {
+    color:white;
+    width:75%;
+    margin-top:8%;
+    line-height:1.5;
+    font-size:18px;
+    margin-left:14%;
+}
+
+
+
+
+/* Section 4 CSS */
+/* ----------------------------- */
+
+.section-4-container {
+    margin-top:8%;
+}
+
+
+
+.certifications-title {
+    color:white;
+    font-size:60px;
+    font-family:'Outfit', serif;
+    margin-left:7%;
+    text-shadow:6px 6px #00308F;
+}
+
+.container {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:3%;
+}
+
+.right-container {
+    margin-bottom:5%;
+}
+
+.certificate-title {
+    margin:0 auto;
+}
+
+.right-container a{
+    text-decoration:none;
+}
+
+.accomplishments-list li {
+    color:white;
+    width:fit-content;
+}
+
+.hypatia, .infosec {
+    height:300px;
+    width:400px;
+    margin-top:5%;
+    border:2px solid #0CAFFF;
+    border-radius:15%;
+    margin-bottom:5%;
+}
+
+.certificate-title {
+    font-size:22px;
+    color:white;
+    border:2px solid gold;
+    width:fit-content;
+    padding:8px;
+    background-color:#00308F;
+    border-radius:15px;
+}
+
+.accomplishments-list {
+    margin-left:5%;
+    margin-top:7%;
+    font-size:18px;
+}
+
+
+.important-skill {
+    color:gold;
+}
+
+
+
+
+/* Media Queries */
+@media (max-width:400px) {
+
+    /* Section 1 */
+
+    .initials {
+        height:100px;
+        width:100px;
+        margin:0 auto;
+        border:transparent;
+    }
+
+    .nav-bar-links {
+        display:none;
+    }
+
+    .nav-bar-links .regular {
+        font-size:5px;
+    }
+
+    .section-1-container {
+        display:block;
+    }
+
+    .left-side {
+        margin:0 auto;
+        height:fit-content;
+    }
+
+    .welcome-container {
+        margin-left:23%;
+        margin-top:10%;
+    }
+
+    .hand-emoji {
+        height:25px;
+        width:25px;
+    }
+
+    .hi {
+        font-size:16px;
+        margin-top:0;
+    }
+
+    .software-developer-title {
+        font-size:25px;
+    }
+
+    .me {
+        margin-left:25%;
+        font-size:25px;
+    }
+
+    .name {
+        font-size:25px;
+    }
+
+    .who-information {
+        margin-top:12%;
+    }
+
+    .books-emoji {
+        margin-left:3%;
+        height:20px;
+        width:20px;
+    }
+
+    .individual-information {
+        font-size:14px;
+    }
+
+    .graduation-hat {
+        margin-left:3%;
+        height:20px;
+        width:20px;
+    }
+
+    .robot-icon {
+        margin-left:3%;
+        height:20px;
+        width:20px;
+    }
+
+    .coding-icon {
+        margin-left:3%;
+        height:20px;
+        width:20px;
+    }
+
+    .contact-container {
+        animation:none;
+        margin-top:15%;
+        margin-left:4%;
+    }
+
+    .contact-container .social-media {
+        width:30px;
+        height:30px;
+        flex-wrap:wrap;
+    }
+
+    .right-side {
+        margin:15% auto;
+    }
+
+    .profile-pic {
+        height:400px;
+        width:325px;
+        margin-left:8%;
+    }
+
+    @keyframes name-animation {
+
+        0% {
+            color:#0CAFFF;
+            margin-left:8%;
+            text-shadow:gold 1px 1px;
+        }
+    
+        25% {
+            color:#0CAFFF;
+            margin-left:12%;
+            text-shadow:gold 1px 1px;
+        }
+    
+        50% {
+            color:#0CAFFF;
+            margin-left:16%;
+            text-shadow:gold 1px 1px;
+        }
+    
+        75% {
+            color:#0CAFFF;
+            margin-left:12%;
+            text-shadow:gold 1px 1px;
+        }
+    
+        100% {
+            color:#0CAFFF;
+            margin-left:8%;
+            text-shadow:gold 1px 1px;
+        }
+    }
+
+
+    /* Section 2  */
+
+    .experience {
+        display:block;
+        margin-top:20%;
+        padding-bottom:20px;
+
+    }
+
+    .left {
+        display:block;
+    }
+
+    .experience-img {
+        height:100px;
+        width:100px;
+    }
+
+    .experience-description, .experience-position, .experience-company {
+        font-size:14px;
+        color:white;
+    }
+
+    .experience-img {
+        margin-left:32%;
+        margin-top:15%;
+        height:100px;
+        width:100px;
+    }
+
+    .experience-date {
+        font-size:20px;
+        margin-top:15%;
+
+    }
+
+    .experience-position {
+        margin-top:7%;
+        color:yellow;
+    }
+
+    .experience-company {
+        margin-top:5%;
+    }
+
+    .experience-activities {
+        margin-top:5%;
+    }
+
+    .right {
+        width:fit-content;
+        height:fit-content;
+        margin-left:6%;
+        margin-top:20%;
+        gap:30px;
+    }
+
+    .right .skill {
+        height:35px;
+        width:35px;
+    }
+
+
+    /* Section 3  */
+
+    .section-3 {
+        margin-top:25%;
+    }
+
+    .projects-title {
+        font-size:30px;
+        text-shadow:3px 3px #00308F;
+        font-family:'Outfit';
+    }
+
+    .past-projects {
+        display:block;
+    }
+
+    .individual-project {
+        width:100%;
+        margin-top:10%;
+    }
+
+    .project-picture {
+        margin-top:10%;
+        height:200px;
+        width:200px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .individual-project-description {
+        font-size:14px;
+        font-family:'Outfit';
+        border:2px solid #00308F;
+        border-radius:25px;
+        padding:10px;
+        margin-left:12%;
+    }
+
+
+    /* Section 4  */
+
+    .section-4-container {
+        margin-top:25%;
+    }
+    .certifications-title {
+        font-size:30px;
+        width:fit-content;
+        margin-left:25%;
+        text-shadow:#00308F 3px 3px;
+    }
+
+    .infosec, .hypatia {
+        height:250px;
+        width:300px;
+        margin-left:10%;
+    }
+
+    .container {
+        display:block;
+        margin-bottom:15%;
+    }
+
+    .certificate-title {
+        font-size:15px;
+    }
+
+    .accomplishments-list {
+        font-size:14px;
+        font-family:'Outfit';
+        list-style-type:circle;
+    }
+
+
+}
