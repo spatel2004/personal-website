@@ -519,73 +519,64 @@ span.name {
 /* ----------------------------- */
 
 .section-4-container {
-    margin-top:8%;
+    margin-top:7%;
 }
 
-
-
-.certifications-title {
+.certificates-title {
     color:white;
-    font-size:60px;
-    font-family:'Outfit', serif;
-    margin-left:7%;
     text-shadow:6px 6px #00308F;
+    text-align:center;
+    font-size:60px;
+    font-family:'Outfit';
 }
 
-.container {
+.certificates-container {
     display:flex;
     justify-content:space-around;
-    align-items:center;
-    margin-top:3%;
 }
 
-.right-container {
-    margin-bottom:5%;
-}
-
-.certificate-title {
-    margin:0 auto;
-}
-
-.right-container a{
-    text-decoration:none;
-}
-
-.accomplishments-list li {
-    color:white;
-    width:fit-content;
+.certificate {
+    margin-bottom:4%;
+    margin-top:7%;
+    border:5px double #00308F;
+    border-radius:50px;
+    box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
+    padding:20px;
 }
 
 .hypatia, .infosec {
-    height:300px;
-    width:400px;
-    margin-top:5%;
-    border:2px solid #0CAFFF;
-    border-radius:15%;
-    margin-bottom:5%;
+    height:350px;
+    width:450px;
+    border-radius:20%;
 }
 
-.certificate-title {
-    font-size:22px;
+.waterloo-icon, .coursera-icon {
+    height:120px;
+    width:120px;
+    margin-top:10%;
+}
+
+.hypatia, .waterloo-icon, .coursera-icon, .infosec {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.certificate-description {
+    margin-top:10%;
     color:white;
-    border:2px solid gold;
-    width:fit-content;
-    padding:8px;
-    background-color:#00308F;
-    border-radius:15px;
 }
 
-.accomplishments-list {
-    margin-left:5%;
-    margin-top:7%;
+.certificate-description p{
+    text-align:center;
     font-size:18px;
+    line-height:2;
+    font-family:'Outfit';
 }
-
 
 .important-skill {
-    color:gold;
+    color:#0CAFFF;
 }
-
 
 
 
@@ -867,6 +858,22 @@ span.name {
         font-size:14px;
         font-family:'Outfit';
         list-style-type:circle;
+    }
+
+    /* Section 4  */
+
+    .certificates-container {
+        display:block;
+    }
+
+    .certificate {
+        margin-top:25%;
+    }
+
+    .hypatia, .infosec {
+        width:350px;
+        height:300px;
+        margin-left:0;
     }
 
 
