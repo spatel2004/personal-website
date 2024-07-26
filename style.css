@@ -287,29 +287,21 @@ span.name {
         margin-top:6%
     }
 
-    20% {
+    25% {
         margin-top:8%;
     }
 
-    40% {
+    50% {
         margin-top:6%;
     }
 
-    60% {
+    75% {
         margin-top:8%
     }
 
-
-    80% {
-        margin-top:6%
-    }
 
     100% {
-        margin-top:8%
-    }
-
-    120% {
-        margin-top:6%;
+        margin-top:6%
     }
 
 
@@ -543,6 +535,7 @@ span.name {
     box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
     padding:20px;
 }
+
 
 .hypatia, .infosec {
     height:350px;
@@ -875,6 +868,5 @@ span.name {
         height:300px;
         margin-left:0;
     }
-
 
 }
