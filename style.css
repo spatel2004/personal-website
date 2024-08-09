@@ -11,6 +11,7 @@ html, body {
     background-size:cover;
     overflow-x: hidden;
 }
+
 * {
     margin:0;
     padding:0;
@@ -52,26 +53,21 @@ nav button:hover {
 
 .nav-bar-links {
     height:80px;
-    width:50%;
     list-style-type:none;
     display:flex;
     justify-content:space-around;
     align-items:center;
     margin-top:1%;
+    gap:80px;
+    padding-right:5%;
 }
-
-
 
 .tools-button, .my-work-button, .experience-button, .email-me {
     background-color:transparent;
     font-family:"Lato",sans-serif;
-    font-size:14px;
-    height:30px;
-    width:90px;
-    border:none;
+    font-size:17px;
+    width:fit-content;
 } 
-
-
 
 @keyframes nav-animation {
     0%,25%,50%,75%,100% {
@@ -79,15 +75,14 @@ nav button:hover {
     }
 }
 
-
 .section-1-container {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     margin-top:4%;
 }
 
 .left-side {
-    margin-left: 5%;
+    margin-left: 4%;
     height:700px;
     margin-top:4%;
     width:fit-content;
@@ -117,13 +112,16 @@ nav button:hover {
 
 }
 
+.right-side {
+    padding-right:3%;
+}
+
 .profile-pic {
-    height: 650px;
+    height: 660px;
     width: 500px;
-    transform:rotate(1deg);
     border-radius:20px;
     box-shadow:5px 5px 3px 2px black;
-    margin-left:-10%;
+    margin-top:4%;
 }
 
 @keyframes example {
@@ -241,7 +239,7 @@ span.name {
 }
 
 .individual-information {
-    font-size:18px;
+    font-size:17px;
 }
 
 .books-emoji{
@@ -299,12 +297,9 @@ span.name {
         margin-top:8%
     }
 
-
     100% {
         margin-top:6%
     }
-
-
 }
 
 .contact-container {
@@ -331,11 +326,9 @@ span.name {
     padding:20px;
 }
 
-
 .experience {
-    display:flex;
-    justify-content:left;
-    margin-left:5%;
+    position:relative;
+    margin:0 auto;
     margin-top:6%;
     gap:20px;
     padding:20px;
@@ -344,12 +337,14 @@ span.name {
     box-shadow:0 4px 8px rgba(0,0,0,0.1);
     background-color:rgba(0,48,143,0.1);
     width:85%;
+    height:250px;
 }
 
 .left {
     width:100%;
     display:flex;
     justify-content:left;
+    padding-left:2%;
 }
 
 .experience-img {
@@ -364,11 +359,12 @@ span.name {
 
 .experience-img:hover {
     box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
-    transform:scale(1.15);
 }
 
 .experience:hover {
     box-shadow:0 0 15px #FFD700, 0 0 30px #FFD700;
+    transform:scale(1.05);
+    cursor:pointer;
 }
 
 .experience-description {
@@ -384,6 +380,7 @@ span.name {
 .experience-date {
     font-size:18px;
     color:white;
+    margin-bottom:1%;
 }
 
 .experience-position {
@@ -392,6 +389,7 @@ span.name {
     font-weight:bold;
     color:#0CAFFF;
     text-shadow:2px 2px 5px black;
+    margin-bottom:1%;
 }
 
 .experience-company {
@@ -402,18 +400,22 @@ span.name {
 }
 
 .experience-activities {
+    width:100%;
+    margin-top:2%;
     color:white;
 }
 
 
 .right {
-    margin-left:-25%;
-    height:100px;
+    position:absolute;
+    top:30px;
+    right:50px;
+    width:300px;
+    height:fit-content;
     display:flex;
     justify-content:space-between;
     margin-top:5px;
     gap:20px;
-
 }
 
 
@@ -574,10 +576,9 @@ span.name {
 
 
 /* Media Queries */
-@media (max-width:400px) {
+@media (max-width:320px) {
 
     /* Section 1 */
-
     .initials {
         height:100px;
         width:100px;
@@ -587,10 +588,6 @@ span.name {
 
     .nav-bar-links {
         display:none;
-    }
-
-    .nav-bar-links .regular {
-        font-size:5px;
     }
 
     .section-1-container {
@@ -603,7 +600,7 @@ span.name {
     }
 
     .welcome-container {
-        margin-left:23%;
+        margin-left:20%;
         margin-top:10%;
     }
 
@@ -618,20 +615,21 @@ span.name {
     }
 
     .software-developer-title {
-        font-size:25px;
+        font-size:20px;
     }
 
     .me {
         margin-left:25%;
-        font-size:25px;
+        font-size:20px;
     }
 
     .name {
-        font-size:25px;
+        font-size:20px;
     }
 
     .who-information {
         margin-top:12%;
+        margin-left:8%;
     }
 
     .books-emoji {
@@ -642,6 +640,7 @@ span.name {
 
     .individual-information {
         font-size:14px;
+        width:60%;
     }
 
     .graduation-hat {
@@ -666,22 +665,23 @@ span.name {
         animation:none;
         margin-top:15%;
         margin-left:4%;
+        margin-bottom:15%;
     }
 
     .contact-container .social-media {
-        width:30px;
-        height:30px;
+        width:35px;
+        height:35px;
         flex-wrap:wrap;
     }
 
     .right-side {
-        margin:15% auto;
+        text-align:center;
     }
 
     .profile-pic {
-        height:400px;
-        width:325px;
-        margin-left:8%;
+        height:350px;
+        width:275px;
+        padding-left:3%;
     }
 
     @keyframes name-animation {
@@ -724,7 +724,9 @@ span.name {
         display:block;
         margin-top:20%;
         padding-bottom:20px;
-
+        border:1px solid blue;
+        height:fit-content;
+        width:100%;
     }
 
     .left {
@@ -734,33 +736,35 @@ span.name {
     .experience-img {
         height:100px;
         width:100px;
+        margin-top:20%;
+        margin-left:30%;
     }
 
-    .experience-description, .experience-position, .experience-company {
+    .experience-position, .experience-company {
         font-size:14px;
         color:white;
     }
 
-    .experience-img {
-        margin-left:32%;
-        margin-top:15%;
-        height:100px;
-        width:100px;
+    .experience-description {
+        font-size:12px;
     }
 
     .experience-date {
-        font-size:20px;
+        font-size:16px;
         margin-top:15%;
-
+        margin-left:10%;
     }
 
     .experience-position {
         margin-top:7%;
+        margin-left:20%;
         color:yellow;
     }
 
     .experience-company {
         margin-top:5%;
+        margin-left:30%;
+        margin-bottom:15%;
     }
 
     .experience-activities {
@@ -770,14 +774,15 @@ span.name {
     .right {
         width:fit-content;
         height:fit-content;
-        margin-left:6%;
         margin-top:20%;
         gap:30px;
+        position:static;
+        padding-left:5%;
     }
 
     .right .skill {
-        height:35px;
-        width:35px;
+        height:30px;
+        width:30px;
     }
 
 
